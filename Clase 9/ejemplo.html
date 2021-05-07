@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media screen and (min-width: 600px) {
+    /* Add a pseudo element with the 
+       text from attribute 'data-abbr' */
+            .texto[data-abbr]::after { 
+                content: attr(data-abbr); 
+            }
+            
+            /* Hide the original label */
+            .texto > span { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="texto" data-abbr="Este es el primer texto">
+        <span>Este es el segundo texto</span>
+    </div>
+    
+</body>
+</html>

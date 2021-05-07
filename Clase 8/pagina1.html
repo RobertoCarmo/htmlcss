@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Incluyendo código JavaScript-->
+    <script>
+        //definiendo variables
+        var x = 10;
+        var y = 35;
+        //realizar suma de las variables
+        var suma = x + y;
+        document.write("El total es:"+suma);
+        //Condiciones
+        //1-15 niño, 15-18 adolescente, 18-29 joven, 30-50 adulto joven, 50 ... adulto mayor
+        if (y<15){
+            document.write("<br><br>Usted es niño!")
+        }
+        else if(y>=15 && y<18){
+            document.write("<br><br> Usted es un adolescente!")
+        }
+        else if(y>=18 && y<=29){
+            document.write("<br><br> Usted es un joven!")
+        }
+        else if(y>29 && y<=50){
+            document.write("<br><br> Usted es un adulto joven")
+        }
+        else 
+            document.write("<br><br> Usted es un adulto joven <br><br>")
+        
+        //ciclos en JavaScript
+
+        for(i=1; i<=100; i=i+1){
+            document.write("<br> Numero: "+ i +"<br>");
+        }
+        
+        var nueva = 0;
+
+        for(i=1; i<=100; i=i+1){
+            nueva = nueva + i;
+        }
+        document.write("<br>El total de la suma es: " + nueva);
+
+        var j = 1;
+
+        while (j < 500) {
+            
+            document.write("<br>El número par es: " + ( 2 * J) );
+            j = j + 1;
+        }
+
+        function miFuncion(num1, num2){
+            var suma = num1 + num2;
+            document.write("<br><br>La suma es: "+suma);
+        }
+        miFuncion(10,20);
+
+        //arreglo 
+
+        var nombres = ["Pedro","Juan","Diego"]
+        document.write("<br><br>"+nombres[0]);
+    </script> 
+<body>
+    
+</body>
+</html>
